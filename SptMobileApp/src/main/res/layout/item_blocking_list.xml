@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.totrade.spt.mobile.view.customize.CommonTextView
+        android:id="@+id/ctv_blocking"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        app:cLeftBottomTextColor="@color/gray_txt_cc"
+        app:cLeftBottomTextSize="11sp"
+        app:cLeftBottomTextString="123456789012345"
+        app:cLeftTextSize="15sp"
+        app:cLeftTopTextColor="@color/gray_txt_33"
+        app:cLeftTopTextString="保证金"
+        app:cLeftViewPaddingLeft="15dp"
+        app:cRightBottomTextColor="@color/gray_txt_cc"
+        app:cRightBottomTextSize="11sp"
+        app:cRightBottomTextString="2017/01/12"
+        app:cRightTopTextColor="@color/gray_txt_33"
+        app:cRightTopTextSize="15sp"
+        app:cRightTopTextString="3000.00"
+        app:cRightViewPaddingRight="15dp"
+        app:cShowDividerLineType="bottom" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_next" />
+</LinearLayout>

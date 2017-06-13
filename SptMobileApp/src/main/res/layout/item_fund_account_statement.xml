@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.CommonTextView
+        android:id="@+id/ctv_account_statement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        app:cLeftViewPaddingLeft="0dp"
+        app:cLeftBottomTextColor="@color/gray_txt_99"
+        app:cLeftBottomTextSize="11sp"
+        app:cLeftBottomTextString="2016/12/01"
+        app:cLeftTopTextColor="@color/black_txt_1d"
+        app:cLeftTopTextSize="13sp"
+        app:cLeftTopTextString="收到定金(元)"
+        app:cRightViewPaddingRight="15dp"
+        app:cRightBottomTextColor="@color/gray_txt_99"
+        app:cRightBottomTextSize="11sp"
+        app:cRightBottomTextString="上海云峰集团有限公司"
+        app:cRightTopTextColor="@color/black_txt_1d"
+        app:cRightTopTextSize="13sp"
+        app:cRightTopTextString="+1,200.00"
+        app:cShowDividerLineType="bottom"/>
+</LinearLayout>

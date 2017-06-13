@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="修改邮箱"
+        app:title_visible="true" />
+    <com.totrade.spt.mobile.view.customize.ValidatorEditText
+        android:id="@+id/vet_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_txt_d56"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="该邮箱还未验证，请登录您的邮箱查收邮件并验证。"/>
+    <Button
+        android:id="@+id/btn_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_half_circle_blue_3"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:text="重新发送验证邮件"/>
+</LinearLayout>

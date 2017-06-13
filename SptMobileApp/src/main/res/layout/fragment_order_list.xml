@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="订单管理"
+        app:title_visible="true" />
+
+    <com.totrade.spt.mobile.view.customize.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/transparent"
+        app:ddmaskColor="#30000000"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuSelectedIcon="@drawable/icon_drop_down_selected"
+        app:ddmenuTextSize="13sp"
+        app:ddmenuUnselectedIcon="@drawable/icon_drop_down_unselected"
+        app:ddtextSelectedColor="@color/blue"
+        app:ddtextUnselectedColor="@color/gray_txt_22"
+        app:ddunderlineColor="#eeeeee" />
+
+</LinearLayout>

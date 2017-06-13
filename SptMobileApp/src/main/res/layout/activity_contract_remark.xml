@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.CommonTitle3
+        android:id="@+id/titleView"
+        style="@style/title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="备注信息" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="备注名"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/str_textsize_16sp" />
+
+    <EditText
+        android:id="@+id/etNickName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="添加备注名"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColor="@color/ltBlack"
+        android:textColorHint="@color/ltgray"
+        android:textSize="@dimen/str_textsize_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="电话号码"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/str_textsize_16sp" />
+
+    <com.totrade.spt.mobile.view.customize.ValidatorEditText
+        android:id="@+id/etPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="添加电话号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="12dp"
+        android:textColor="@color/ltBlack"
+        android:textColorHint="@color/ltgray"
+        android:textSize="@dimen/str_textsize_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="描述"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/str_textsize_16sp" />
+
+    <com.totrade.spt.mobile.view.customize.MyEditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="12dp"
+        android:gravity="top|left"
+        android:textColor="@color/ltBlack"
+        android:textColorHint="@color/ltgray"
+        android:textSize="@dimen/str_textsize_18sp"
+        android:background="@color/white"
+        android:hint="添加更多备注信息"
+        android:maxLength="100" />
+</LinearLayout>

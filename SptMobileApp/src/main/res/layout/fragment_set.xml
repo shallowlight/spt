@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="设置"
+        app:title_visible="true" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_account_set"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="帐号设置"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_message_set"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="消息设置"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_site_rule"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="网站规则"
+        android:visibility="gone"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_use_help"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="使用帮助"
+        android:visibility="gone"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_abount_spt"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="关于商品通"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_version_info"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="版本信息"
+        app:sRightTextColor="#666666"
+        app:sRightTextSize="12sp"
+        tools:sRightTextString="V3.0.1" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#222222"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="清除缓存"
+        app:sRightTextColor="#666666"
+        app:sRightTextSize="12sp"
+        tools:sRightTextString="23.56MB" />
+    
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="退出登录"
+        android:textSize="16sp"
+        android:textColor="@color/gray_txt_3b"
+        android:gravity="center"/>
+</LinearLayout>

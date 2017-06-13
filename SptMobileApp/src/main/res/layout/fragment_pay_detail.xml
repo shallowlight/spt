@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="付款详情"
+                android:textColor="@color/gray_txt_22"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <com.totrade.spt.mobile.view.customize.SuperTextView
+                android:id="@+id/stv_total_loan"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:sLeftTextColor="@color/gray_txt_99"
+                app:sLeftTextSize="13sp"
+                app:sLeftTextString="总贷款"
+                app:sLineShow="none"
+                app:sRightTextColor="@color/gray_txt_3b"
+                app:sRightTextSize="13sp"
+                app:sRightTextString="20,000.00" />
+
+            <com.totrade.spt.mobile.view.customize.SuperTextView
+                android:id="@+id/stv_payment_paid"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:sLeftTextColor="@color/gray_txt_99"
+                app:sLeftTextSize="13sp"
+                app:sLeftTextString="已付定金"
+                app:sLineShow="none"
+                app:sRightTextColor="@color/gray_txt_3b"
+                app:sRightTextSize="13sp"
+                app:sRightTextString="2000.00" />
+
+            <com.totrade.spt.mobile.view.customize.SuperTextView
+                android:id="@+id/stv_obligation"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:sLeftTextColor="@color/gray_txt_99"
+                app:sLeftTextSize="13sp"
+                app:sLeftTextString="待付款"
+                app:sLineShow="none"
+                app:sRightTextColor="@color/gray_txt_3b"
+                app:sRightTextSize="13sp"
+                app:sRightTextString="18,000.00" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line" />
+
+        <com.totrade.spt.mobile.view.customize.SuperTextView
+            android:id="@+id/stv_need_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:sLeftTextColor="@color/gray_txt_22"
+            app:sLeftTextSize="16sp"
+            app:sLeftTextString="需付款"
+            app:sLineShow="none"
+            app:sRightTextColor="#da5656"
+            app:sRightTextSize="16sp"
+            app:sRightTextString="1,118,000.00" />
+
+        <LinearLayout
+            android:id="@+id/ll_count_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="剩余付款时间"
+                android:textColor="@color/gray_txt_99"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/shape_half_circle_blue_3"
+            android:gravity="center"
+            android:text="确认付款"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

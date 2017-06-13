@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_bottom_gray"
+    android:paddingLeft="@dimen/space_horizontal"
+    android:paddingRight="@dimen/space_horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/icon_next" />
+
+    <ImageView
+        android:id="@+id/imgNegoStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgNext"
+        android:layout_toStartOf="@+id/imgNext"
+        android:contentDescription="@string/icon_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imgNext"
+        android:layout_toStartOf="@+id/imgNext"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/lblProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/ltBlack"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/lblBuySell"
+                style="@style/icon_text_buysell_item_style"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/lblSubSide"
+                style="@style/icon_text_item_style"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_icon_subsidy"
+                android:text="@string/icon_subsidy"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lblPaySystem"
+                style="@style/icon_text_item_style"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_paysystem"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lblProductPrice"
+                style="@style/price_item_style"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/imgSupLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblLastNegoTime"
+                style="@style/item_3rdinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/item_3rdinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_order_time" />
+
+            <TextView
+                android:id="@+id/lblNegoTime"
+                style="@style/item_3rdinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/lblValidTime"
+                style="@style/item_3rdinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zone_red_txt" />
+
+            <TextView
+                android:id="@+id/lblValidTimeSub"
+                style="@style/item_3rdinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/after_invalid_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblProductNumber"
+                style="@style/item_number_style_min"
+                android:textSize="11.52dp" />
+
+            <TextView
+                android:id="@+id/lblDeliveryTime"
+                style="@style/item_deliverytime_style" />
+
+
+            <TextView
+                android:id="@+id/lblDeliveryPlace"
+                style="@style/item_deliveryplace_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--android:id="@+id/lblDeliveryPlace"-->
+            <TextView style="@style/item_deliveryplace_style" />
+
+            <TextView
+                android:id="@+id/lblBond"
+                style="@style/item_bond_style"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

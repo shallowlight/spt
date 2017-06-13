@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/activity_driver"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_horizontal"
+        android:paddingRight="@dimen/space_horizontal"
+        android:showDividers="middle|end">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/trade_notice"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textsize_30px" />
+
+            <com.totrade.spt.mobile.view.customize.ToggleButtonView
+                android:id="@+id/tbv_trade_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/trade_focus"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textsize_30px" />
+
+            <com.totrade.spt.mobile.view.customize.ToggleButtonView
+                android:id="@+id/tbv_trade_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/tongtong_notify"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textsize_30px" />
+
+            <com.totrade.spt.mobile.view.customize.ToggleButtonView
+                android:id="@+id/tbv_tongtong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/push_on_time"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textsize_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/push_on_time_description"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/str_textsize_11sp" />
+
+            <com.totrade.spt.mobile.view.customize.ToggleButtonView
+                android:id="@+id/tbv_push_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

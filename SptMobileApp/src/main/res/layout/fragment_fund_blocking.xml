@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="冻结资金详情"
+        app:title_visible="true"
+        app:right_btn_src="@drawable/icon_more"
+        app:right_btn_visible="true" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/lv_block_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

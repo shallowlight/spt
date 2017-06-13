@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/activity_driver"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/space_horizontal"
+    android:paddingRight="@dimen/space_horizontal"
+    android:showDividers="middle">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:drawableLeft="@drawable/home_news"
+            android:drawablePadding="5dp"
+            android:text="新闻"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_more_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:text="查看更多"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize_14" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/fl_news"
+        layout="@layout/item_home_news" />
+
+</LinearLayout>

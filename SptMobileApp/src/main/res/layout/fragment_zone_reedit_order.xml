@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/activity_driver"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <com.totrade.spt.mobile.view.customize.CommonTitleZone
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <RelativeLayout style="@style/relativelayout_input">
+
+        <TextView
+            style="@style/text_left_inputname"
+            android:text="修改价格" />
+
+        <com.totrade.spt.mobile.view.customize.DecimalEditText
+            android:id="@+id/txtProductPrice"
+            style="@style/large_text_style"
+            android:layout_width="230dp"
+            android:background="@color/white"
+            android:hint="请输入价格"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/lblPriceUnit"
+            style="@style/text_right_inputname"
+            android:layout_alignBaseline="@+id/txtProductPrice"
+            android:layout_alignBottom="@+id/txtProductPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="元/吨" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/relativelayout_input">
+
+        <TextView
+            style="@style/text_left_inputname"
+            android:text="修改数量" />
+
+        <com.totrade.spt.mobile.view.customize.DecimalEditText
+            android:id="@+id/txtProductNumber"
+            style="@style/large_text_style"
+            android:layout_width="230dp"
+            android:background="@color/white"
+            android:hint="请输入数量"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/text_right_inputname"
+            android:text="吨" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/relativelayout_input">
+
+        <TextView
+            style="@style/text_left_inputname"
+            android:text="挂单时效" />
+
+        <TextView
+            android:id="@+id/lblValidTime"
+            style="@style/large_text_style" />
+
+        <ImageView
+            style="@style/text_right_inputname"
+            android:src="@drawable/img_right_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_hight"
+            android:layout_marginLeft="@dimen/space_horizontal2"
+            android:layout_marginRight="@dimen/space_horizontal2"
+            android:background="@drawable/btn_bg_blue2"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_hight"
+            android:layout_marginLeft="@dimen/space_horizontal2"
+            android:layout_marginRight="@dimen/space_horizontal2"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borderline_ccc"
+            android:gravity="center"
+            android:text="撤单"
+            android:textColor="@color/ui_gray_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickline_hight"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textsize_32px" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/space_horizontal"
+            android:background="@drawable/btn_bg_blue2"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_30px"
+            android:translationZ="1dp" />
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/space_horizontal"
+            android:layout_marginRight="@dimen/space_horizontal"
+            android:background="@drawable/borderline_ccc"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="重置"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textsize_30px"
+            android:translationZ="1dp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/popfullselect"
+        layout="@layout/popfullselect" />
+
+</FrameLayout>

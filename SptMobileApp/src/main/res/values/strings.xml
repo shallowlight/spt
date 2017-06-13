@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">商品通</string>
+    <string name="trynow">立即体验</string>
+    <string name="leading_words">领先的工业原材料综合电商平台</string>
+    <string name="copyright">copyright © 2014-2016 沪ICP备14033272号</string>
+
+    <string name="list_empty_hint">暂时没有数据</string>
+    <!-- 用户中心 -->
+    <!-- 登录 -->
+    <string name="str_userlogin">登录</string>
+
+    <!-- 忘记密码 -->
+    <string name="input_pwd">请输入登录密码</string>
+    <string name="forget_pwd">忘记密码?</string>
+
+    <!-- update -->
+    <string name="release">发布</string>
+    <string name="cancel">取消</string>
+    <string name="determine">确定</string>
+    <string name="cancelOrder">撤单</string>
+    <string name="updateOrder">修改</string>
+    <!-- 议价 -->
+    <string name="str_footer_layout_loading">正在加载</string>
+    <string name="str_header_layou_pull_down_refresh">下拉可以刷新</string>
+    <string name="tr_header_layou_pull_down_time">上次更新时间</string>
+    <!-- 账户 -->
+    <!-- 新询价 -->
+    <string name="str_price">单价</string>
+    <!-- 我关注的 -->
+    <string name="add_attention_number">总数量</string>
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 添加账户 -->
+    <!-- 按钮 -->
+    <!-- 我关注的商品 -->
+    <string name="photo">拍照</string>
+    <string name="select_from_photos">从相册选择</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="submit_photo">上传图片</string>
+    <string name="please_wait">请稍后...</string>
+    <string name="uploading">上传中...</string>
+    <string name="notice">公告</string>
+    <string name="description">暂时没有最新消息</string>
+    <string name="fast_registration">快速注册</string>
+
+
+    <string name="tradeMode">贸易方式</string>
+    <string name="productName">品名</string>
+    <string name="productQuality">质量标准</string>
+    <string name="deliveryTime">交货期</string>
+    <string name="productPlace">产地</string>
+    <string name="deliverPlace">交货地</string>
+    <string name="reservoirArea">库区</string>
+    <string name="bond">定金</string>
+    <string name="productPrice">价格</string>
+    <string name="payMethod">付款方式</string>
+    <string name="deliverMethod">提货方式</string>
+    <string name="validTime">时效</string>
+    <string name="appointed_company">指定供应商</string>
+
+
+    <string name="digits_1a_">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_</string>
+    <string name="send">发送</string>
+
+    <!-- IM Order Card -->
+    <string name="myself">我</string>
+    <string name="im_input_hint">请输入信息</string>
+
+    <!-- 推荐邀请 -->
+
+    <!-- user_center_account_manager -->
+
+    <string name="im_admin">顾问</string>
+
+    <string name="funds_into_pingan_desc">您绑定的是平安银行企业账户，请到平安银行网上银行自主入金</string>
+    <string name="funds_outto_pingan_desc">您绑定的是平安银行企业账户，请到平安银行网上银行自主出金</string>
+
+    <!-- 专区发布 START-->
+    <string name="spot_product">立即交付</string>
+    <string name="future_product">周期交付</string>
+    <string name="separable">是否可拆分</string>
+
+    <string name="zone_min_deal_number">最低成交量</string>
+    <string name="number_unit_tn">吨</string>
+    <string name="zone_deal_number">@string/productnumber</string>
+    <string name="hint_input_number">请输入数量</string>
+    <string name="hint_inputprice">请输入价格</string>
+    <string name="title_requset_form_repertory">从库存选择</string>
+
+    <!--dialog 提示框 START-->
+    <string name="dialog_zone_submitrequest">确定提交当前挂单吗？</string>
+    <string name="countdown_time_hint">秒后重新获取</string>
+    <string name="ordernumber">订单号：</string>
+    <!--专区发布 END-->
+    <string name="chat_name">通通</string>
+    <string name="submit_success">提交成功</string>
+    <string name="resell">转卖</string>
+    <string name="productnumber">数量</string>
+    <string name="order_validtime">订单时效:</string>
+    <string name="price_all">总价:</string>
+    <string name="min_deal_number">最小成交量</string>
+    <string name="argue_deal_part">同意拆分采购</string>
+    <string name="product_number">数量</string>
+    <string name="title_choose_supplier">指定供应商</string>
+    <!-- 专区企业概况 -->
+
+    <!--专区申请表-->
+    <string name="icon_description">图标</string>
+    <string name="icon_subsidy">补</string>
+    <string name="credit_order_time">挂单时间：</string>
+    <string name="after_invalid_time">后失效</string>
+    <string name="login_description">领先的工业原材料电商平台</string>
+    <string name="trade_hall">贸易大厅</string>
+    <string name="trade_focus">我的关注</string>
+    <string name="trade_notice">交易通知</string>
+    <string name="edit_focus">编辑关注</string>
+    <string name="reset">重置</string>
+    <string name="confirm">确认</string>
+    <string name="personal_regist_success">恭喜您，已经成功注册个人账号！</string>
+    <string name="company_regist">您的申请已提交</string>
+    <string name="company_regist_description">您的申请已提交至该企业管理员，\n请等待审核！您也可以直接与该企业管理员联系！</string>
+    <string name="upgrade_company_account2">升级至企业账号开通交易权限</string>
+    <string name="upgrade_company_account">升级至企业账号</string>
+    <string name="upgrade_company_account_not">先逛逛</string>
+
+    <string name="agree_contract">我已知晓并同意《贸易专区规则》、\n《委托代办货权转移协议》</string>
+    <string name="tongtong_notify">通通消息</string>
+    <string name="push_on_time">时段推送</string>
+    <string name="push_on_time_description">推送时间 am8:00-pm10:00</string>
+    <string name="preview_contract">电子合同预览</string>
+    <string name="user_center_not_login_hint">您尚未登录</string>
+    <string name="user_center_freeman_hint">您还未绑定企业，不能使用相关服务</string>
+</resources>

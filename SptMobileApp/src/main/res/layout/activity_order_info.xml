@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.CommonTitle3
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_height="@dimen/ll_layout_height"
+        android:tag="查看订单">
+    </com.totrade.spt.mobile.view.customize.CommonTitle3>
+
+    <TextView
+        android:id="@+id/tvDealTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:id="@+id/llExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="交易企业信息"/>
+                <LinearLayout
+                    android:id="@+id/llBuyerCo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/lblBuyerCo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:text="买方" />
+
+                    <TextView
+                        android:id="@+id/lblBuyerCoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:text="查看"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:id="@+id/llSellerCo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/lblSellerCo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:text="卖方" />
+
+                    <TextView
+                        android:id="@+id/lblSellerCoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right|center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:text="卖方"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgDealStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:src="@drawable/img_delivered"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

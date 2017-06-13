@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="关于商品通"
+        app:title_visible="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/gray_txt_99"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="版本号：V3.0" />
+    </LinearLayout>
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_product_info"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBothLineMargin="15dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#1d1d1d"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="商品信息"
+        app:sLineShow="bottom"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_company_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBothLineMargin="15dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#1d1d1d"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="企业介绍"
+        app:sLineShow="bottom"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_contact_customer"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:sBothLineMargin="15dp"
+        app:sBottomLineWidth="1px"
+        app:sLeftTextColor="#1d1d1d"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="联系客服"
+        app:sLineShow="bottom"
+        app:sRightIconRes="@drawable/icon_next" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cb_industry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1"
+    android:button="@drawable/selector_checkbox_industry"
+    android:clickable="false"
+    android:paddingBottom="10dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:textColor="@color/ltBlack"
+    android:textSize="@dimen/textsize_30px"/>
+

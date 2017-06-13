@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="企业信息"
+                android:textColor="@color/gray_txt_99"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/lLayout_form_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="14dp"
+                android:showDividers="middle">
+
+                <com.totrade.spt.mobile.view.customize.FormItemSelectView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="商品信息"
+                android:textColor="@color/gray_txt_99"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/lLayout_form_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="14dp"
+                android:showDividers="middle">
+
+                <com.totrade.spt.mobile.view.customize.FormItemSelectView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemSelectView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemInputView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="#f5f5f5"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="交易信息"
+                android:textColor="@color/gray_txt_99"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/lLayout_form_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="14dp"
+                android:showDividers="middle|end">
+
+                <com.totrade.spt.mobile.view.customize.FormItemSelectView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemSelectView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemInputView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemInputView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+                <com.totrade.spt.mobile.view.customize.FormItemInputView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="14dp" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/view_zone_img_post" />
+
+            <TextView
+                android:id="@+id/tv_preView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="生成预览"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="贸易代理申请"
+        app:title_visible="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layer_top_line_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="提交申请"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_txt_ee"
+            android:text="取消"
+            android:textColor="@color/gray_txt_99"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

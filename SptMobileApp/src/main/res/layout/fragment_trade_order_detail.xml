@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <include layout="@layout/item_trade_order2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@drawable/activity_driver"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_horizontal"
+            android:paddingRight="@dimen/space_horizontal"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ui_gray_black"
+                        android:textSize="@dimen/textsize_30px"
+                        tools:text="最新指数" />
+
+                    <TextView
+                        android:id="@+id/tv_release_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/ui_gray_light2"
+                        android:textSize="@dimen/str_textsize_11sp"
+                        tools:text="发布" />
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="10dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:src="@drawable/arrow_gray_down"
+                        android:layout_height="10dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_index_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_sell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_join_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/ui_green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="加入卖"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_26px" />
+
+        <TextView
+            android:id="@+id/tv_join_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/ui_red"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="加入买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_26px" />
+
+    </LinearLayout>
+</LinearLayout>

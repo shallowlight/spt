@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space_horizontal"
+        android:paddingRight="@dimen/space_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textSize_14"
+            tools:text="SDHK4564549" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="@dimen/textSize_12"
+            tools:text="20172017" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="1"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textSize_17"
+                tools:text="苯乙烯" />
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="1"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textSize_14"
+                tools:text="20172017" />
+
+            <TextView
+                android:id="@+id/tv_product_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="1"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textSize_14"
+                tools:text="20172017" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_validtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ui_red"
+            android:layout_marginTop="@dimen/space_horizontal"
+            android:textSize="@dimen/textSize_14"
+            tools:text="20172017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_horizontal"
+        android:paddingRight="@dimen/space_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:id="@+id/ktv_bond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:id="@+id/ktv_quality_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+
+                <com.totrade.spt.mobile.view.customize.KeyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray_66"
+                    android:textSize="@dimen/str_textsize_13sp"
+                    tools:text="test" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="供货方"
+            android:textColor="@color/color_gray_66"
+            android:textSize="@dimen/str_textsize_12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:divider="@drawable/activity_driver"
+        android:orientation="vertical"
+        android:showDividers="middle|end">
+
+        <RelativeLayout
+            android:id="@+id/view_Choose"
+            style="@style/relativelayout_input">
+
+            <TextView
+                style="@style/text_left_inputname"
+                android:text="从库存选择" />
+
+            <TextView
+                android:id="@+id/lblOfficeId"
+                style="@style/large_text_style"
+                android:hint="请选择" />
+
+            <ImageView
+                style="@style/text_right_inputname"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relativelayout_input">
+
+            <TextView
+                style="@style/text_left_inputname"
+                android:text="@string/productPrice" />
+
+            <com.totrade.spt.mobile.view.customize.DecimalEditText
+                android:id="@+id/txtProductPrice"
+                style="@style/large_text_style"
+                android:layout_width="250dp"
+                android:background="@color/white"
+                android:hint="请输入价格"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/lblPriceUnit"
+                style="@style/text_right_inputname" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relativelayout_input">
+
+            <TextView
+                style="@style/text_left_inputname"
+                android:text="@string/product_number" />
+
+            <com.totrade.spt.mobile.view.customize.DecimalEditText
+                android:id="@+id/txtProductNumber"
+                style="@style/large_text_style"
+                android:layout_width="250dp"
+                android:background="@color/white"
+                android:hint="请输入数量"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                style="@style/text_right_inputname"
+                android:text="@string/number_unit_tn" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relativelayout_input">
+
+            <TextView
+                style="@style/text_left_inputname"
+                android:text="时效" />
+
+            <TextView
+                android:id="@+id/lblValidTime"
+                style="@style/large_text_style"
+                android:hint="请选择时效" />
+
+            <ImageView
+                style="@style/text_right_inputname"
+                android:contentDescription="@string/number_unit_tn"
+                android:src="@drawable/img_right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

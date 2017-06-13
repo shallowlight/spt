@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/activity_driver" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_delivery_period"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="交收期"
+                app:text_value="---" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_bond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="定金"
+                app:text_value="---" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_delevery_place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="交货地"
+                app:text_value="----" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_reservoir_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="库区"
+                app:text_value="---" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_quality_standard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="质量标准"
+                app:text_value="----" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_origin_product_place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="原产地"
+                app:text_value="----" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="提货方式"
+                app:text_value="买家自提" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingTop="10dp">
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="付款方式"
+                app:text_value="现款" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                app:text_key="贸易方式"
+                app:text_value="江阴" />
+        </LinearLayout>
+        <com.totrade.spt.mobile.view.customize.KeyTextView
+            android:id="@+id/ktv_supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:text_key="供货商"
+            app:text_value="----------" />
+    </LinearLayout>
+
+</LinearLayout>

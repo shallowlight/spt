@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="冻结明细"
+        app:title_visible="true" />
+
+    <TextView
+        android:id="@+id/tv_bussiness_type"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="@color/gray_txt_22"
+        android:textSize="15sp"
+        android:text="追加定金"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_block_price"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:sLeftTextString="冻结金额"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextColor="@color/gray_txt_99"
+        app:sRightTextSize="13sp"
+        app:sRightTextColor="@color/gray_txt_22"
+        app:sRightTextString="—1,200.00"
+        app:sLineShow="none"/>
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_other_company"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:sLeftTextString="对方公司"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextColor="@color/gray_txt_99"
+        app:sRightTextSize="13sp"
+        app:sRightTextColor="@color/gray_txt_99"
+        app:sRightTextString="上海佰所仟讯电子商务有限公司"
+        app:sLineShow="none"/>
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_deal_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:sLeftTextString="交易时间"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextColor="@color/gray_txt_99"
+        app:sRightTextSize="13sp"
+        app:sRightTextColor="@color/gray_txt_99"
+        app:sRightTextString="2017/04/02 12:12:21"
+        app:sLineShow="none"/>
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_contractId"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:sLeftTextString="合同号"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextColor="@color/gray_txt_99"
+        app:sRightTextSize="13sp"
+        app:sRightTextColor="@color/gray_txt_99"
+        app:sRightTextString="497575020252527"
+        app:sLineShow="none"/>
+</LinearLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:divider="@drawable/activity_driver"
+    android:orientation="vertical"
+    android:showDividers="middle|end">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height2"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/ui_gray_black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgProductNature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbSpotProduct"
+                    style="@style/radiobutton_bar_left"
+                    android:text="@string/spot_product" />
+
+                <RadioButton
+                    style="@style/radiobutton_bar_right"
+                    android:checked="true"
+                    android:text="@string/future_product" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="产品属性"
+                android:textColor="@color/ui_gray_light2"
+                android:textSize="@dimen/str_textsize_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_horizontal"
+                android:paddingRight="@dimen/space_horizontal"
+                android:showDividers="middle">
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llProductType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llProductQuality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llProductPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llDeliveryPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llReservoirArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llDeliveryTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="交易方式"
+                android:textColor="@color/ui_gray_light2"
+                android:textSize="@dimen/str_textsize_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_horizontal"
+                android:paddingRight="@dimen/space_horizontal"
+                android:showDividers="middle">
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llTradeMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llDeliveryMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llPayMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llBond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/llDealCompanys"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/appointed_company" />
+
+                    <TextView
+                        android:id="@+id/lblDealCompanys"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/arrow_right_gray"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|end"
+                        android:hint="请选择(选填)"
+                        android:maxLines="1"
+                        android:textColor="@color/ui_gray_black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="价格与数量"
+                android:textColor="@color/ui_gray_light2"
+                android:textSize="@dimen/str_textsize_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_horizontal"
+                android:paddingRight="@dimen/space_horizontal"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_price"
+                        android:textColor="@color/gray" />
+
+                    <com.totrade.spt.mobile.view.customize.DecimalEditText
+                        android:id="@+id/txtProductPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:hint="@string/hint_inputprice"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/ltBlack"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/lblPriceUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ltBlack" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zone_deal_number"
+                        android:textColor="@color/gray" />
+
+                    <com.totrade.spt.mobile.view.customize.DecimalEditText
+                        android:id="@+id/txtProductNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:hint="@string/hint_input_number"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/ltBlack"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_unit_tn"
+                        android:textColor="@color/ltBlack" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSeparable"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/separable"
+                        android:textColor="@color/gray" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/tbvSeparable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMinDealNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zone_min_deal_number"
+                        android:textColor="@color/gray" />
+
+                    <com.totrade.spt.mobile.view.customize.DecimalEditText
+                        android:id="@+id/txtMinDealNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="end|center_vertical"
+                        android:hint="@string/hint_input_number"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/ltBlack"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_unit_tn"
+                        android:textColor="@color/ltBlack" />
+                </LinearLayout>
+
+                <com.totrade.spt.mobile.view.customize.TextViewMapItem
+                    android:id="@+id/llValidTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:divider="@drawable/activity_driver"
+                android:orientation="vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:showDividers="middle">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="备注" />
+
+                    <com.totrade.spt.mobile.view.customize.MyEditText
+                        android:id="@+id/txtMemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/register_phone_captcha"
+                        android:gravity="end|center_vertical"
+                        android:hint="请填写"
+                        android:maxLength="120"
+                        android:minHeight="40dp"
+                        android:textSize="@dimen/str_textsize_12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:minHeight="40dp">
+
+                    <CheckBox
+                        android:id="@+id/cbAgreeContract"
+                        style="@style/checkbox_style_zone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/lblReadContract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/cbtextcolor" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/line_hight"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:text="@string/reset"
+            android:textColor="@color/ui_gray_light1" />
+
+        <Button
+            android:id="@+id/btnRelease"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/line_hight"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="@string/release"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

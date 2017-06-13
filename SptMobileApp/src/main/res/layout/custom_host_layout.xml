@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_im_order_bg_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="最新成交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_36px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/im_order_tv_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/str_textsize_20sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/tv_unitprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_36px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_num" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_time"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_delivery_time" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_product_quality"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_product_quality" />
+
+                <TextView
+                    android:id="@+id/tv_product_place"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_product_place" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bond"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_bond" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_place"
+                    style="@style/tv_style_im_custom_host"
+                    android:drawableLeft="@drawable/im_order_delivery_place" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

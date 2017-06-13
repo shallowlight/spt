@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="main_tab">
+        <item>首页</item>
+        <item>贸易专区</item>
+        <item>撮合集市</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="notify_tab">
+        <item>消息</item>
+        <item>通通</item>
+    </string-array>
+
+    <string-array name="notify_message_type_list_str">
+        <item>商品通公告</item>
+        <item>交易公告</item>
+        <item>交收处理</item>
+        <item>资金管理</item>
+        <item>违约处理</item>
+        <item>我的关注</item>
+    </string-array>
+
+    <integer-array name="notify_message_type_list_img">
+        <item>@drawable/notify_spt_notice</item>
+        <item>@drawable/notify_trade_notice</item>
+        <item>@drawable/notify_delivery_manage</item>
+        <item>@drawable/notify_funds_manage</item>
+        <item>@drawable/notify_break_contract</item>
+        <item>@drawable/notify_focus</item>
+    </integer-array>
+
+    <string-array name="UserCenterMenus">
+        <item>经营分析</item>
+        <item>资金管理</item>
+        <item>贸易代理</item>
+        <item>C级申请</item>
+        <item>积分商城</item>
+        <item>行业申请</item>
+        <item>成员管理</item>
+        <item>供应商设置</item>
+    </string-array>
+
+    <!--专区图片上传描述-->
+
+    <!-- 甲醇HG_CL_JC，二甘醇HG_CL_EG，苯乙烯HG_FT_BY的交货期，要增加月中的选项：
+     0-10：上，11-20：中，21-30：下
+     上：UP，中：MD，下：DOWN -->
+    <string-array name="special_product">
+        <item>HG_CL_JC</item>
+        <item>HG_CL_EG</item>
+        <item>HG_FT_BY</item>
+    </string-array>
+
+    <!--行业申请&企业信息-->
+    <string-array name="industry_requst_company_info">
+        <item>企业名称</item>
+        <item>企业产品销售区域</item>
+        <item>企业上一年产值</item>
+        <item>企业上一年净利润</item>
+    </string-array>
+    <!--行业申请&商品信息-->
+    <string-array name="industry_requst_product_info">
+        <item>行业</item>
+        <item>品名</item>
+        <item>质量标准</item>
+        <item>原产地</item>
+        <item>交货地</item>
+        <item>贸易方式</item>
+        <!--<item>行业地位</item>-->
+    </string-array>
+    <!--行业申请&交易信息-->
+    <string-array name="industry_requst_deal_info">
+        <item>数据单位与包装</item>
+        <item>计价单位</item>
+        <item>定金比例</item>
+    </string-array>
+
+    <!--贸易代理申请&企业信息-->
+    <string-array name="trade_agent_requst_company_info">
+        <item>采购方</item>
+    </string-array>
+    <!--贸易代理申请&商品信息-->
+    <string-array name="trade_agent_requst_product_info">
+        <item>品名</item>
+        <item>质量标准</item>
+        <item>仓库</item>
+    </string-array>
+    <!--贸易代理申请&交易信息-->
+    <string-array name="trade_agent_requst_deal_info">
+        <item>交货期</item>
+        <item>交货方式</item>
+        <item>数量</item>
+        <item>单价</item>
+        <item>总价</item>
+    </string-array>
+</resources>

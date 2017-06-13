@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    tools:showIn="@layout/fragment_zone_request_company">
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_post"
+            style="@style/txt_main_font_14_gray_left_vcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:text="基本资料上传"/>
+
+        <TextView
+            style="@style/txt_main_font_14_ltblack_right_vcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_post"
+            android:layout_below="@+id/tv_post"
+            android:visibility="invisible"
+            android:text="(1M以内)"/>
+    </RelativeLayout>
+
+    <com.totrade.spt.mobile.view.customize.CustomGridView
+        android:id="@+id/cgv_zone_post_imgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_toRightOf="@+id/rl_left"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"/>
+
+</RelativeLayout>

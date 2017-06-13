@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickline_hight"
+        android:gravity="center"
+        android:text="筛选"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/textsize_32px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@drawable/activity_driver"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:showDividers="middle|end|beginning" >
+
+            <com.totrade.spt.mobile.view.customize.MyEditText
+                android:id="@+id/txtOppCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_edittext_solid"
+                android:drawableLeft="@drawable/img_magnifier"
+                android:hint="请输入对方企业名称"
+                android:imeOptions="actionSearch"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblTradeMode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblProductQuality"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblProductPlace"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblDeliveryPlace"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblDeliveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <LinearLayout
+                android:id="@+id/llDeliveryPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="交货地"
+                    android:textSize="14sp" />
+
+                <com.totrade.spt.mobile.view.customize.MyEditText
+                    android:id="@+id/txtDeliveryPlaceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/clickline_hight"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_edittext_solid"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入交货地"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="10"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="牌号"
+                    android:textSize="14sp" />
+
+                <com.totrade.spt.mobile.view.customize.MyEditText
+                    android:id="@+id/txtBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/clickline_hight"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_edittext_solid"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入牌号"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="10"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWhareHouseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="仓库"
+                    android:textSize="14sp" />
+
+                <com.totrade.spt.mobile.view.customize.MyEditText
+                    android:id="@+id/txtWhareHouseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/clickline_hight"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_edittext_solid"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入仓库名称"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="10"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblDealTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <com.totrade.spt.mobile.view.customize.PopupTextView
+                android:id="@+id/lblDealStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/clickline_hight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblConfirm"
+                    style="@style/button_single_style"
+                    android:text="确定" />
+
+                <TextView
+                    android:id="@+id/lblRecoverAll"
+                    style="@style/button_second_style"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="重置" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

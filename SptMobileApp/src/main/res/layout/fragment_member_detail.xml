@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="详细资料"
+        app:title_visible="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.totrade.spt.mobile.view.customize.CircleImageView
+            android:id="@+id/civ_user_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/main_home_portrait" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_txt_22"
+                android:textSize="15sp"
+                tools:text="凌涛" />
+
+            <com.totrade.spt.mobile.view.customize.KeyTextView
+                android:id="@+id/ktv_mobile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray_txt_66"
+                android:textSize="13sp"
+                app:text_key="手机号码"
+                app:text_value="12345678901" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_ID_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftTextColor="@color/gray_txt_66"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextString="身份证号码"
+        app:sLineColor="@color/line_divider"
+        app:sLineShow="bottom"
+        app:sRightTextColor="@color/gray_txt_22"
+        app:sRightTextSize="13sp" />
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftTextColor="@color/gray_txt_66"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextString="邮箱"
+        app:sLineColor="@color/line_divider"
+        app:sLineShow="bottom"
+        app:sRightTextColor="@color/gray_txt_22"
+        app:sRightTextSize="13sp" />
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_permission"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftTextColor="@color/gray_txt_66"
+        app:sLeftTextSize="13sp"
+        app:sLeftTextString="权限"
+        app:sLineColor="@color/line_divider"
+        app:sLineShow="bottom"
+        app:sRightTextColor="@color/gray_txt_22"
+        app:sRightTextSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_half_circle_blue_3"
+        android:gravity="center"
+        android:text="同意"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_refuse"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_half_circle_white_3"
+        android:gravity="center"
+        android:text="拒绝"
+        android:textColor="@color/blue"
+        android:textSize="13sp" />
+</LinearLayout>

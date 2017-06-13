@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@color/background"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/textsize_24px"/>
+
+    <LinearLayout
+        android:id="@+id/llDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.totrade.spt.mobile.view.customize.CircleImageView
+            android:id="@+id/imgUserHead"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@drawable/img_headpic_def"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/ltBlack"
+            android:textSize="@dimen/textsize_28px"/>
+        <ImageView 
+            android:id="@+id/imgSelect"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_imteam_01_false"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="62dp"
+        android:background="@color/background"
+        />
+
+</LinearLayout>

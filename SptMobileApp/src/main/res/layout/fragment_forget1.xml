@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/color_gray_33"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_26px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/activity_driver"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:showDividers="middle|end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_phone_num" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/space_horizontal"
+                android:layout_marginRight="@dimen/space_horizontal"
+                android:background="@color/ui_line_divider" />
+
+            <EditText
+                android:id="@+id/etAccount"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColorHint="@color/ltgray"
+                android:textSize="@dimen/textsize_32px" />
+
+            <TextView
+                android:id="@+id/tvGetVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_rect_blue2"
+                android:padding="8dp"
+                android:text="发送验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_verification_code" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/space_horizontal"
+                android:layout_marginRight="@dimen/space_horizontal"
+                android:background="@color/ui_line_divider" />
+
+            <EditText
+                android:id="@+id/etVerification"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:maxLines="1"
+                android:textColorHint="@color/ltgray"
+                android:textSize="@dimen/textsize_32px" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height2"
+        android:layout_margin="30dp"
+        android:background="@drawable/btn_bg_blue2"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32px" />
+
+</LinearLayout>

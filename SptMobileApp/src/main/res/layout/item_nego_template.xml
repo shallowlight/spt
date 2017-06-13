@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/activity_padding"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/imgSelect"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:contentDescription="@string/icon_description" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:id="@+id/lblProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16.32sp"
+                />
+
+            <TextView
+                android:id="@+id/lblBuySell"
+                style="@style/icon_text_buysell_item_style"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:layout_marginStart="5dp" />
+
+            <TextView
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:id="@+id/lblProductPrice"
+                style="@style/price_item_style" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lblProductNumber"
+                style="@style/item_number_style_min"
+                android:layout_marginEnd="14.4dp"
+                android:layout_marginRight="14.4dp"
+                android:textSize="11.52dp"
+                 />
+            <TextView
+                android:id="@+id/lblDeliveryTime"
+                android:layout_marginEnd="14.4dp"
+                android:layout_marginRight="14.4dp"
+                style="@style/item_deliverytime_style" />
+            <TextView
+                android:id="@+id/lblDeliveryPlace"
+                style="@style/item_deliveryplace_style"
+                android:layout_marginEnd="14.4dp"
+                android:layout_marginRight="14.4dp"
+                 />
+            <TextView
+                android:id="@+id/lblBond"
+                style="@style/item_bond_style"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/arrow_right_gray"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/icon_description" />
+    </LinearLayout>

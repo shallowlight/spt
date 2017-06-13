@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="test"
+        android:textColor="@color/ui_gray_black"
+        android:textSize="@dimen/textsize_26px" />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="test"
+        android:textColor="@color/ui_gray_black"
+        android:textSize="@dimen/textsize_30px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_price_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            tools:text="test"
+            android:textColor="@color/ui_gray_light1"
+            android:textSize="@dimen/str_textsize_9sp" />
+
+        <TextView
+            android:id="@+id/tv_update_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            tools:text="test"
+            android:textColor="@color/ui_gray_light1"
+            android:textSize="@dimen/str_textsize_9sp" />
+
+    </FrameLayout>
+</LinearLayout>

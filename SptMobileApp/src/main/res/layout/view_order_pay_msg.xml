@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/activity_driver" />
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_need_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:sLeftTextColor="@color/gray_txt_22"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="需付款"
+        app:sLineShow="none"
+        app:sRightTextColor="#da5656"
+        app:sRightTextSize="16sp"
+        app:sRightTextString="----------" />
+
+    <LinearLayout
+        android:id="@+id/ll_count_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="剩余付款时间"
+            android:textColor="@color/gray_txt_87"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

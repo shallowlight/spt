@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ff30a9de</color>
+    <color name="colorAccent">#ff30a9de</color>
+    <color name="color_blue_6cf">#6bc0fa</color>
+    <color name="alpha_gray_3f">#333f3f3f</color>
+    <color name="color_gray_6f">#6f6f6f</color>
+    <color name="color_gray_90">#909090</color>
+    <color name="color_gray_cf">#cfcfcf</color>
+    <color name="color_gray_df">#dfdfdf</color>
+    <color name="color_gray_e5">#e5e5e5</color>
+    <color name="color_gray_ed">#ededed</color>
+    <color name="color_gray_33">#333333</color>
+    <color name="color_gray_66">#666666</color>
+    <color name="color_gray_d9">#d9d9d9</color>
+    <color name="order_green">#0bc9b0</color>
+    <!-- 灰色背景颜色 -->
+
+    <!--  -->
+    <color name="list_divider">#cccccc</color>
+    <color name="background">#f5f5f5</color>
+    <color name="blue">@color/blue_primary</color>
+    <color name="orange">#ff9500</color>
+    <color name="red">#dc4747</color>
+    <color name="red2">#ff0000</color>
+    <color name="ltgray">#cccccc</color>
+    <color name="ltgray_e">#eeeeee</color>
+    <color name="ltBlack">#1d1d1d</color>
+    <color name="dkgray">#444444</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange2">#ef8531</color>
+    <color name="dkwhite">#f9f9f9</color>
+    <color name="line_divider">#e5e5e5</color>
+    <!-- 提货方式图标颜色 -->
+
+    <color name="transparent">#00000000</color>
+    <color name="swipe_background_color">@color/background</color>
+    <color name="swipe_color_1">@color/blue</color>
+    <color name="swipe_color_2">#ff0000</color>
+    <color name="swipe_color_3">#ffff00</color>
+    <color name="swipe_color_4">#66ff99</color>
+
+    <!--zone-->
+    <color name="color_gray_f9">#f9f9f9</color>
+    <color name="zone_blue">#0177f0</color>
+    <color name="zone_red_view">#D53736</color>
+    <color name="zone_red_txt">#d94949</color>
+    <color name="zone_green_view">#3AB65E</color>
+    <color name="zone_green_txt">#63c37e</color>
+
+    <color name="black_transparent">#aa555555</color>
+
+    <!-- from mumu again, recommend using these colours. -->
+    <color name="ui_blue">@color/blue_primary</color>
+    <color name="ui_green">@color/zone_green_view</color>
+    <color name="ui_red">#da5656</color>
+    <color name="ui_yellow">#eaa604</color>
+    <color name="ui_gray_black">#1d1d1d</color>
+    <color name="ui_gray_light1">@color/color_gray_66</color>
+    <color name="ui_gray_light2">#999999</color>
+    <color name="ui_gray_light3">@color/ltgray</color>
+    <color name="ui_gray_background">@color/background</color>
+    <color name="ui_line_divider">@color/line_divider</color>
+
+    <color name="gray">#878787</color>
+
+    <!-- usercenter -->
+    <color name="user_center_yellow_b3">#ffe7b3</color>
+    <color name="color_red_icon">#dc5a5a</color>
+    <color name="color_green_icon">#3AB65E</color>
+
+    <!--中台-->
+
+    <!--蓝色-->
+    <!--深蓝-->
+    <!--天蓝-->
+
+    <!-- ////////////////////////////////////////////////// -->
+
+    <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->
+    <color name="line">#e8e8e8</color>
+    <!--蓝色-->
+    <color name="blue_primary">#30a9de</color>
+
+    <!--文本颜色-->
+    <!--正文灰色字-->
+    <color name="gray_txt_3b">#3b3b3b</color>
+    <color name="gray_txt_22">#222222</color>
+    <!--小标题灰黑色字-->
+    <color name="black_txt_34">#343434</color>
+    <color name="black_txt_1d">#1d1d1d</color>
+    <!--浅灰色-->
+    <color name="gray_txt_99">#999999</color>
+    <color name="gray_txt_66">#666666</color>
+    <color name="gray_txt_33">#333333</color>
+    <color name="gray_txt_aa">#aaaaaa</color>
+    <color name="gray_txt_87">#878787</color>
+    <color name="gray_txt_ee">#eeeeee</color>
+    <color name="gray_txt_cc">#cccccc</color>
+
+    <!--红色-->
+    <color name="red_txt_d56">#da5656</color>
+    <!--蓝色-->
+    <color name="blue_txt_3de">#30A9DE</color>
+
+    <!--背景色-->
+    <!--白色-->
+    <color name="white_bg_fb">#fbfbfb</color>
+
+    <!--mei sei l-->
+    <color name="circle_1">#ff783c</color>
+    <color name="circle_2">#ff6853</color>
+    <color name="circle_3">#54a9fe</color>
+    <color name="circle_4">#a4e1e8</color>
+    <color name="circle_5">#5da1ed</color>
+</resources>

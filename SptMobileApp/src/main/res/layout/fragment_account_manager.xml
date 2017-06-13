@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/blue"
+        app:left_btn_src="@drawable/icon_title_back_white"
+        app:left_btn_visible="true"
+        app:title_text="设置"
+        app:title_visible="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textColor="@color/gray_txt_3b"
+                android:textSize="15sp" />
+
+            <com.totrade.spt.mobile.view.customize.CircleImageView
+                android:id="@+id/civ_user_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/main_home_portrait" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_next" />
+        </LinearLayout>
+
+        <include layout="@layout/line_match_window" />
+
+        <com.totrade.spt.mobile.view.customize.SuperTextView
+            android:id="@+id/stv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:sLeftTextColor="@color/gray_txt_3b"
+            app:sLeftTextSize="15sp"
+            app:sLeftTextString="姓名"
+            app:sRightTextColor="@color/black_txt_34"
+            app:sRightTextSize="15sp"
+            tools:sRightTextString="凌涛"
+            app:sLineShow="bottom"
+            app:sBottomLineWidth="1px"/>
+
+        <com.totrade.spt.mobile.view.customize.SuperTextView
+            android:id="@+id/stv_identity_card"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:sLeftTextColor="@color/gray_txt_3b"
+            app:sLeftTextSize="15sp"
+            app:sLeftTextString="身份证号码"
+            app:sRightTextColor="@color/black_txt_34"
+            app:sRightTextSize="15sp"
+            tools:sRightTextString="1231231231231231223"
+            app:sLineShow="bottom"
+            app:sBottomLineWidth="1px"/>
+
+        <com.totrade.spt.mobile.view.customize.CommonTextView
+            android:id="@+id/ctv_user_telphone"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:cLeftTextColor="@color/gray_txt_3b"
+            app:cLeftTextSize="15sp"
+            app:cLeftTextString="手机号码"
+            app:cLeftViewPaddingLeft="15dp"
+            app:cRightIconResForDrawableRight="@drawable/icon_next"
+            app:cRightTextColor="@color/black_txt_34"
+            app:cRightTextSize="15sp"
+            tools:cRightTextString="***********"
+            app:cRightViewPaddingRight="15dp"
+            app:cDividerLineHeight="1px"
+            app:cShowDividerLineType="bottom"/>
+
+        <com.totrade.spt.mobile.view.customize.CommonTextView
+            android:id="@+id/ctv_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:cLeftTextColor="@color/gray_txt_3b"
+            app:cLeftTextSize="15sp"
+            app:cLeftTextString="邮箱"
+            app:cLeftViewPaddingLeft="15dp"
+            app:cRightIconResForDrawableRight="@drawable/icon_next"
+            app:cRightTextColor="@color/black_txt_34"
+            app:cRightTextSize="15sp"
+            tools:cRightTextString="12345678901@foxmail.com"
+            app:cRightViewPaddingRight="15dp"
+            app:cDividerLineHeight="1px"
+            app:cShowDividerLineType="bottom"/>
+
+        <com.totrade.spt.mobile.view.customize.CommonTextView
+            android:id="@+id/ctv_modify_password"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:cLeftTextString="修改密码"
+            app:cLeftViewPaddingLeft="15dp"
+            app:cRightIconResForDrawableRight="@drawable/icon_next"
+            app:cRightViewPaddingRight="15dp"
+            app:cDividerLineHeight="1px"
+            app:cShowDividerLineType="bottom"/>
+
+        <com.totrade.spt.mobile.view.customize.SuperTextView
+            android:id="@+id/stv_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:sLeftTextColor="@color/gray_txt_3b"
+            app:sLeftTextSize="15sp"
+            app:sLeftTextString="企业名称"
+            app:sRightTextColor="@color/black_txt_34"
+            app:sRightTextSize="15sp"
+            tools:sRightTextString="上海前所网讯电子商务有限公司"
+            app:sBottomLineWidth="1px"
+            app:sLineShow="bottom"/>
+
+        <com.totrade.spt.mobile.view.customize.SuperTextView
+            android:id="@+id/stv_access_permission"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:sLeftTextColor="@color/gray_txt_3b"
+            app:sLeftTextSize="15sp"
+            app:sLeftTextString="身份权限"
+            app:sRightTextColor="@color/black_txt_34"
+            app:sRightTextSize="15sp"
+            tools:sRightTextString="企业账号-管理者"
+            app:sBottomLineWidth="1px"
+            app:sLineShow="bottom"/>
+    </LinearLayout>
+</LinearLayout>

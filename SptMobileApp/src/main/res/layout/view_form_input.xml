@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_form_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="名称" />
+
+    <EditText
+        android:id="@+id/et_form_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center_vertical|right"
+        android:hint="请填写"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="@color/ltgray"
+        android:textSize="@dimen/textsize_30px" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_form_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_form_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_paint" />
+    </FrameLayout>
+</merge>

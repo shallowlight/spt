@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_pingan_bank_hint" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/background"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="收款方"
+        android:textColor="@color/gray_txt_99"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/activity_driver"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="户名"
+                android:textColor="@color/gray_txt_66"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lblAccountName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"
+                android:text="----------------"
+                android:textColor="@color/gray_txt_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="开户行"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/str_textsize_15sp" />
+
+            <TextView
+                android:id="@+id/lblAccountBank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"
+                android:text="----------------"
+                android:textColor="@color/gray_txt_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/str_textsize_15sp" />
+
+            <TextView
+                android:id="@+id/lblBankCardNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"
+                android:text="---- ---- ---- ---- ---"
+                android:textColor="@color/gray_txt_22" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_match_window" />
+</LinearLayout>

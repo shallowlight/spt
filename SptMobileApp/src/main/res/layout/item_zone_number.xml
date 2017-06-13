@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/relativelayout_input">
+    <TextView
+       style="@style/text_left_inputname"
+        android:id="@+id/lblCategory" />
+
+    <com.totrade.sptchat.customview.DecimalEditText
+        android:inputType="numberDecimal"
+        style="@style/large_text_style"
+        android:id="@+id/txtNumber"
+         />
+    <TextView
+        android:id="@+id/lblUnit"
+        style="@style/text_right_inputname"
+        />
+</RelativeLayout>

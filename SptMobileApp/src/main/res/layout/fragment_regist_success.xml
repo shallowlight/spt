@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="@dimen/space_horizontal"
+        android:background="@drawable/cross_black" />
+
+    <LinearLayout
+        android:id="@+id/ll_regist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_done" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/personal_regist_success"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textsize_36px"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/upgrade_company_account2"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textsize_26px" />
+
+        <TextView
+            android:id="@+id/tv_upgrade"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/line_height2"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_bg_blue2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/upgrade_company_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_28px" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_not"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/line_height2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_rect_white_press2"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/upgrade_company_account_not"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textsize_28px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_regist2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_done" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/company_regist"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textsize_36px"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/company_regist_description"
+            android:textColor="@color/ui_gray_black"
+            android:textSize="@dimen/textsize_26px" />
+
+    </LinearLayout>
+</FrameLayout>

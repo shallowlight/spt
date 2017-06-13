@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33333333"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/activity_driver"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/tv_edit"
+                style="@style/txtMenuTabInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_hight"
+                android:background="@drawable/text_background_up"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="编辑" />
+
+            <Button
+                android:id="@+id/tv_markAll"
+                style="@style/txtMenuTabInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_hight"
+                android:background="@drawable/text_background_down"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="所有标记已读" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tv_cancel"
+            style="@style/txtMenuTabInfo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

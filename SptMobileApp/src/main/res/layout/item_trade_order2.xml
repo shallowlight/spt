@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/space_horizontal"
+    android:paddingRight="@dimen/space_horizontal"
+    android:paddingBottom="@dimen/space_vertical"
+    android:paddingTop="@dimen/space_horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="@dimen/str_textsize_13sp"
+            tools:text="456465156" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_deliveryplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/trade_delivery_place"
+                android:drawablePadding="3dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/str_textsize_11sp"
+                tools:text="haha" />
+
+            <TextView
+                android:id="@+id/tv_product_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/trade_quality"
+                android:drawablePadding="3dp"
+                android:textColor="@color/ui_red"
+                android:textSize="@dimen/str_textsize_11sp"
+                tools:text="haha" />
+
+            <TextView
+                android:id="@+id/tv_bond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/trade_bond"
+                android:drawablePadding="3dp"
+                android:textColor="@color/ui_yellow"
+                android:textSize="@dimen/str_textsize_11sp"
+                tools:text="AD:-2827" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新成交"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/ui_gray_light2"
+            android:textSize="@dimen/str_textsize_11sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7890"
+            android:textSize="@dimen/str_textsize_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

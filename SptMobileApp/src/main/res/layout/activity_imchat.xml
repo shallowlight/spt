@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.CommonTitle3
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_layout_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:transcriptMode="normal" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/im_input_hint"
+                        android:maxLines="3"
+                        android:textColor="@color/ltBlack"
+                        android:textSize="@dimen/textsize_26px" />
+
+                    <TextView
+                        android:id="@+id/tv_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="13dp"
+                        android:background="@drawable/btn_bg_blue"
+                        android:padding="7dp"
+                        android:text="@string/send"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_32px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="11dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="19dp"
+                        android:padding="5dp"
+                        android:src="@drawable/selector_voice_bg" />
+
+                    <ImageView
+                        android:id="@+id/iv_emoj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="19dp"
+                        android:padding="5dp"
+                        android:src="@drawable/im_emoj_smile" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="19dp"
+                        android:padding="5dp"
+                        android:src="@drawable/im_makephoto" />
+
+                    <ImageView
+                        android:id="@+id/iv_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="19dp"
+                        android:padding="5dp"
+                        android:src="@drawable/im_gallery" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_input_panel"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/ll_audio"
+                    layout="@layout/im_chat_audio_record" />
+
+                <include
+                    android:id="@+id/ll_emoj"
+                    layout="@layout/im_chat_emoj" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_no_speech"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/alpha_gray_3f"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

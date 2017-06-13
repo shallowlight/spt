@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="str_textsize_13sp">13sp</dimen>
+    <dimen name="str_textsize_14sp">14sp</dimen>
+    <dimen name="str_textsize_15sp">15sp</dimen>
+    <dimen name="str_textsize_16sp">16sp</dimen>
+    <dimen name="str_textsize_18sp">18sp</dimen>
+    <dimen name="str_margin_15dp">15dp</dimen>
+    <dimen name="ll_layout_height">40dp</dimen>
+    <dimen name="item_height">50dp</dimen>
+    <dimen name="item_height2">45dp</dimen>
+    <dimen name="vertical_item_height">40dp</dimen>
+    <dimen name="avatar_size_in_session">30dp</dimen>
+    <dimen name="bubble_head_margin_horizontal">10dp</dimen>
+    <dimen name="bubble_time_layout_margin_bottom">8dp</dimen>
+    <dimen name="bubble_time_layout_margin_top">18dp</dimen>
+    <!-- 文字 -->
+    <dimen name="str_textsize_9sp">9sp</dimen>
+    <dimen name="str_textsize_11sp">11sp</dimen>
+    <dimen name="str_textsize_12sp">12sp</dimen>
+    <dimen name="str_textsize_20sp">20sp</dimen>
+    <dimen name="str_textsize_24sp">24sp</dimen>
+
+    <!-- 改页面 -->
+    <!-- 文字大小  px*360/750* -->
+    <dimen name="textsize_26px">12.48sp</dimen>
+    <dimen name="textsize_28px">13.44sp</dimen>
+    <dimen name="textsize_30px">14.4sp</dimen>
+    <dimen name="textsize_32px">15.36sp</dimen>
+    <dimen name="textsize_36px">17.28sp</dimen>
+    <dimen name="textsize_24px">11.52sp</dimen>
+
+    <!-- 控件间距 -->
+    <dimen name="activity_horizontal_margin">9.6dp</dimen>   <!-- 控件距离屏幕边缘间距 -->
+    <dimen name="line_margin_20px">9.6dp</dimen>             <!-- 控件与控件间距 -->
+    <dimen name="line_margin_30px">14.4dp</dimen>            <!-- 控件与控件间距 -->
+    <dimen name="button_hight">42.24dp</dimen>               <!-- 按钮高度 -->
+    <dimen name="title_hight">42.24dp</dimen>                <!-- 标题高度 -->
+    <dimen name="line_hight">34.56dp</dimen>                 <!-- 详情页行行高 -->
+    <!-- 详情页行间距 -->
+    <dimen name="clickline_hight">38.4dp</dimen> <!-- 详情页行间距 -->
+    <!-- 详情页行间距 -->
+    <dimen name="head_height">40dp</dimen>
+
+    <dimen name="split_one_pixels">1px</dimen>
+    <!--过时-->
+    <dimen name="activity_margin_left">14.4dp</dimen>
+    <dimen name="activity_margin_right">14.4dp</dimen>
+
+    <dimen name="space">14.4dp</dimen>
+    <dimen name="space_horizontal">@dimen/space</dimen>
+    <dimen name="space_horizontal2">40dp</dimen>
+    <dimen name="space_vertical">10dp</dimen>
+
+    <!-- 图片上传容器默认宽高 -->
+    <dimen name="image_width">100dp</dimen>
+
+    <dimen name="textSize_9">8.8sp</dimen>
+    <dimen name="textSize_11">10.7sp</dimen>
+    <dimen name="textSize_12">11.7sp</dimen>
+    <dimen name="textSize_13">12.6sp</dimen>
+    <dimen name="textSize_14">13.6sp</dimen>
+    <dimen name="textSize_16">15.6sp</dimen>
+    <dimen name="textSize_17">16.5sp</dimen>
+
+    <dimen name="line_height">40dp</dimen>
+    <dimen name="line_height2">35dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/activity_driver"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <com.totrade.spt.mobile.view.customize.CommonTitle3
+        android:id="@+id/title"
+        style="@style/title_style"
+        android:tag="通通"/>
+
+    <RadioGroup
+        android:id="@+id/rgMainTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+         <RadioButton
+            android:id="@+id/rbChatMsg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_chat_main_left"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="聊天"
+            android:textColor="@drawable/selector_text_check_blue_white"
+            android:textSize="@dimen/textsize_26px" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_chat_main_right"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="联系人"
+            android:textColor="@drawable/selector_text_check_blue_white"
+            android:textSize="@dimen/textsize_26px" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/rgMainTab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/title_color"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--android:paddingTop="2dp" >-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbChatMsg"-->
+            <!--style="@style/mainRadioButton"-->
+            <!--android:checked="true"-->
+            <!--android:drawableTop="@drawable/selector_tab_chat"-->
+            <!--android:text="聊天" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbChatFrends"-->
+            <!--style="@style/mainRadioButton"-->
+            <!--android:drawableTop="@drawable/selector_tab_contract"-->
+            <!--android:text="联系人" />-->
+    <!--</RadioGroup>-->
+
+</LinearLayout>

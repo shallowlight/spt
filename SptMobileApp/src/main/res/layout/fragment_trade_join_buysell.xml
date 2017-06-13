@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_trade_order2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rgRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbCreatOffer"
+                        style="@style/radiobutton_bar_left"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/lblChooseRequest"
+                        style="@style/radiobutton_bar_right" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/activity_driver"
+                    android:orientation="vertical"
+                    android:showDividers="middle|end">
+
+                    <RelativeLayout
+                        android:id="@+id/view_Choose"
+                        style="@style/relativelayout_input">
+
+                        <TextView
+                            style="@style/text_left_inputname"
+                            android:text="从库存选择" />
+
+                        <TextView
+                            android:id="@+id/lblOfficeId"
+                            style="@style/large_text_style"
+                            android:hint="请选择" />
+
+                        <ImageView
+                            style="@style/text_right_inputname"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_right_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/relativelayout_input">
+
+                        <TextView
+                            style="@style/text_left_inputname"
+                            android:text="@string/productPrice" />
+
+                        <com.totrade.spt.mobile.view.customize.DecimalEditText
+                            android:id="@+id/txtProductPrice"
+                            style="@style/large_text_style"
+                            android:layout_width="250dp"
+                            android:background="@color/white"
+                            android:hint="请输入价格"
+                            android:inputType="numberDecimal" />
+
+                        <TextView
+                            android:id="@+id/lblPriceUnit"
+                            style="@style/text_right_inputname" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/relativelayout_input">
+
+                        <TextView
+                            style="@style/text_left_inputname"
+                            android:text="@string/product_number" />
+
+                        <com.totrade.spt.mobile.view.customize.DecimalEditText
+                            android:id="@+id/txtProductNumber"
+                            style="@style/large_text_style"
+                            android:layout_width="250dp"
+                            android:background="@color/white"
+                            android:hint="请输入数量"
+                            android:inputType="numberDecimal" />
+
+                        <TextView
+                            style="@style/text_right_inputname"
+                            android:text="@string/number_unit_tn" />
+                    </RelativeLayout>
+
+                    <RelativeLayout style="@style/relativelayout_input">
+
+                        <TextView
+                            style="@style/text_left_inputname"
+                            android:text="时效" />
+
+                        <TextView
+                            android:id="@+id/lblValidTime"
+                            style="@style/large_text_style"
+                            android:hint="请选择时效" />
+
+                        <ImageView
+                            style="@style/text_right_inputname"
+                            android:contentDescription="@string/number_unit_tn"
+                            android:src="@drawable/img_right_arrow" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_left_inputname"
+                            android:layout_marginRight="10dp"
+                            android:text="备注" />
+
+                        <EditText
+                            android:id="@+id/etMemo"
+                            style="@style/large_text_style"
+                            android:background="@null"
+                            android:hint="请填写"
+                            android:maxLines="3"
+                            android:paddingLeft="40dp"
+                            android:paddingRight="40dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llAgreePartDeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/space_horizontal"
+                        android:paddingRight="@dimen/space_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbAgreePartDeal"
+                            style="@style/checkbox_style_zone"
+                            android:text="@string/argue_deal_part" />
+
+                        <RelativeLayout
+                            android:id="@+id/llMinDealNum"
+                            style="@style/relativelayout_input"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/text_left_inputname"
+                                android:text="@string/min_deal_number" />
+
+                            <com.totrade.spt.mobile.view.customize.DecimalEditText
+                                android:id="@+id/txtProductMinNumber"
+                                style="@style/large_text_style"
+                                android:layout_width="200dp"
+                                android:background="@color/white"
+                                android:hint="请输入最小成交量"
+                                android:inputType="numberDecimal" />
+
+                            <TextView
+                                style="@style/text_right_inputname"
+                                android:text="@string/number_unit_tn" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/list_divider" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_horizontal"
+                        android:paddingRight="@dimen/space_horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_all"
+                            android:textColor="@color/ltBlack"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/lblPriceAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/str_textsize_20sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_agree_contract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:minHeight="40dp"
+                        android:paddingLeft="@dimen/space_horizontal"
+                        android:paddingRight="@dimen/space_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbAgreeContract"
+                            style="@style/checkbox_style_zone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/lblReadContract"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="3dp"
+                            android:textColor="@drawable/cbtextcolor"
+                            android:textSize="@dimen/textSize_13" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnRelease"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_hight"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="@dimen/space_horizontal2"
+                        android:layout_marginRight="@dimen/space_horizontal2"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_bg_blue2"
+                        android:text="@string/confirm"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

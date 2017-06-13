@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_news_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ui_gray_black"
+                android:textSize="@dimen/textSize_14"
+                tools:text="@string/input_pwd" />
+
+            <TextView
+                android:id="@+id/tv_news_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ui_gray_light2"
+                android:textSize="@dimen/textSize_12"
+                tools:text="2017/05/02" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_news_img"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
+            android:src="@drawable/news_default" />
+    </LinearLayout>
+
+</FrameLayout>

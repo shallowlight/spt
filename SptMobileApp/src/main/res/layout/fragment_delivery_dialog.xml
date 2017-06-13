@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.totrade.spt.mobile.view.customize.ComTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:barBackground="@color/white"
+        app:left_btn_src="@drawable/icon_close"
+        app:left_btn_visible="true"
+        app:title_color="@color/black_txt_1d"
+        app:title_text="宣布交收"
+        app:title_visible="true" />
+    <include layout="@layout/line_match_window"/>
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:textSize="12sp"/>
+
+    <com.totrade.spt.mobile.view.customize.SuperTextView
+        android:id="@+id/stv_ready_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:sLeftTextString="备货日期"
+        app:sLeftTextColor="@color/gray_txt_66"
+        app:sLineShow="bottom"
+        app:sRightIconRes="@drawable/icon_next" />
+
+    <com.totrade.spt.mobile.view.customize.FormItemInputView
+        android:id="@+id/fiv_delivery_warehouse"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/tv_summit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/shape_half_circle_blue_3"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:id="@+id/tv"
+        style="@style/txt_main_font_12"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_below="@+id/iv"
+        tools:text="注：请上传营业执照、银行账户开户批准、上年审计报表"
+        tools:textColor="@color/zone_red_txt"/>
+</merge>

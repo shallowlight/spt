@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.totrade.spt.mobile.view.customize.GradationScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_user_center2"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_user_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp">
+
+                        <com.totrade.spt.mobile.view.customize.CircleImageView
+                            android:id="@+id/civ_user_img"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:saveEnabled="false"
+                            android:src="@drawable/main_home_portrait"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="85dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_user_name_key"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                tools:text="--"/>
+
+                            <TextView
+                                android:id="@+id/tv_company_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:ellipsize="end"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:text="-------------------------"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_user_name_key"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_user_name_key"
+                                android:text="---"
+                                android:textColor="@color/white"
+                                android:textSize="11sp"/>
+
+                            <com.totrade.spt.mobile.view.customize.KeyTextView
+                                android:id="@+id/ktv_sum_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/shape_half_blue_bg"
+                                android:gravity="center_vertical"
+                                android:text="积分：-"
+                                android:textColor="@color/white"
+                                android:textSize="11sp"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_not_login_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="85dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:text="点此登录"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="-30dp"
+                    android:background="@color/white"
+                    android:paddingBottom="17dp"
+                    android:paddingTop="15dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_available_balance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0.00"
+                                android:textColor="#222222"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_available_balance_unit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:text="可用余额(元)"
+                                android:textColor="@color/gray_txt_99"
+                                android:textSize="11sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_block_fund"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_block_fund"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0.00"
+                                android:textColor="#222222"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_block_fund_unit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:text="冻结资金(元)"
+                                android:textColor="@color/gray_txt_99"
+                                android:textSize="11sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_tsb_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#222222"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_tsb_count_unit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:text="通商宝(个)"
+                                android:textColor="@color/gray_txt_99"
+                                android:textSize="11sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <com.totrade.spt.mobile.view.customize.CommonTextView
+                    android:id="@+id/ctv_order_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="15dp"
+                    app:cDividerLineHeight="1px"
+                    app:cLeftIconResForDrawableLeft="@drawable/icon_menu_order_mng"
+                    app:cLeftImageViewMarginLeft="15dp"
+                    app:cLeftTextColor="#222222"
+                    app:cLeftTextSize="13sp"
+                    app:cLeftTextString="订单管理"
+                    app:cRightIconResForDrawableRight="@drawable/icon_next"
+                    app:cRightTextColor="@color/gray_txt_99"
+                    app:cRightTextSize="11sp"
+                    app:cRightTextString="查看所有订单"
+                    app:cShowDividerLineType="bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_declaredelivery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_declaration_port"
+                    android:gravity="center"
+                    android:text="待宣港"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bond_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_pay_money"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_all_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_deliver_goods"
+                    android:gravity="center"
+                    android:text="待交货"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_tag_sent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="20dp"
+                    android:drawableTop="@drawable/icon_delivery"
+                    android:gravity="center"
+                    android:text="待收货"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_unpayremain"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="16dp"
+                    android:drawableTop="@drawable/icon_break_contract_blue"
+                    android:gravity="center"
+                    android:text="已违约"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.totrade.spt.mobile.view.customize.CommonTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    app:cDividerLineHeight="1px"
+                    app:cLeftIconResForDrawableLeft="@drawable/icon_menu_order_mng"
+                    app:cLeftImageViewMarginLeft="15dp"
+                    app:cLeftTextColor="#222222"
+                    app:cLeftTextSize="13sp"
+                    app:cLeftTextString="工具栏"
+                    app:cShowDividerLineType="bottom"/>
+
+                <com.totrade.spt.mobile.view.customize.CustomGridView
+                    android:id="@+id/gv_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:horizontalSpacing="1px"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.totrade.spt.mobile.view.customize.GradationScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_set_white"/>
+
+            <CheckedTextView
+                android:id="@+id/ctv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableTop="@drawable/selector_main_home_message2"
+                android:text="消息"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

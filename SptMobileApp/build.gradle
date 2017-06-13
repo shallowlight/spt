@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    defaultConfig {
+        applicationId "com.totrade.spt.mobile.view"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 301
+        versionName "3.0.1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [ JPUSH_APPKEY:"d876dfe3c13c34110484eaab",
+                                     NETEAST_APPKEY:"049e35199e1d42f654112240e7749b2f"
+            ]
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [ JPUSH_APPKEY:"e51c9bd277eec54d01c0c2f6",
+                                     NETEAST_APPKEY: "9e345c6c4f6c4886bfd892a0a7772ac2"
+            ]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    //    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'com.qiyukf.unicorn:unicorn:3.5.0'
+    compile 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':libpickerview')
+    compile project(path: ':xrecyclerview')
+    compile project(path: ':UItraPullToRefresh')
+    compile fileTree('D:\\Release\\Product\\AllMobileJarInOne')
+}

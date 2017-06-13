@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="40dp"
+              android:background="@color/white"
+              android:divider="@drawable/activity_driver"
+              android:dividerPadding="14dp"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <include layout="@layout/line_match_window"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/tradeSubAcc2"
+            android:text="账户名"/>
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_paint"
+            android:background="@null"
+            android:hint="请输入账户名"
+            android:digits="@string/digits_1a_"
+            android:gravity="right"
+            android:maxLength="20"
+            android:textColor="@color/ltBlack"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textsize_32px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_item_height"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/tradeSubAcc2"
+            android:text="手机号码"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_paint"
+            android:gravity="right"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/ltBlack"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textsize_32px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/tradeSubAcc2"
+            android:text="权限"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textColor="@color/ltBlack"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textsize_32px"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_done"
+        style="@style/button_half_circle_bgblue_txtwhite"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="保存"/>
+</LinearLayout>
